@@ -16,7 +16,7 @@
   <!-- Шапка сайта -->
   <header class="page-header">
     <div class="header-container container">
-      <a href="/" class="logo">Web<span class="header-logo">Studio</span></a>
+      <a href="/" class="logo header-logo-margin">Web<span class="header-logo">Studio</span></a>
 
       <!-- Навигация сайта -->
       <nav>
@@ -47,7 +47,7 @@
   <!-- Основная часть сайта -->
   <main>
     <!-- Герой -->
-    <section class="hero">
+    <section class="hero overlay">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button button">Заказать услугу</button>
@@ -59,37 +59,55 @@
       <div class="container">
         <h2 class="features-title section-title visually-hidden">Особенности</h2>
 
-        <div class="features-list-container">
-          <ul class="features-list list">
-            <li class="features-list-item">
-              <h3 class="features-list-title">Внимание к деталям</h3>
-              <p class="features-list-text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
-            </li>
+        <ul class="features-list list">
+          <li class="features-list-item">
+            <div class="features-icon-bg">
+              <svg class="antenna-icon" width="70" height="70">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <h3 class="features-list-title">Внимание к деталям</h3>
+            <p class="features-list-text">
+              Идейные соображения, а также начало повседневной работы по формированию позиции.
+            </p>
+          </li>
 
-            <li class="features-list-item">
-              <h3 class="features-list-title">Пунктуальность</h3>
-              <p class="features-list-text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-              </p>
-            </li>
+          <li class="features-list-item">
+            <div class="features-icon-bg">
+              <svg class="clock-icon" width="70" height="70">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <h3 class="features-list-title">Пунктуальность</h3>
+            <p class="features-list-text">
+              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+            </p>
+          </li>
 
-            <li class="features-list-item">
-              <h3 class="features-list-title">Планирование</h3>
-              <p class="features-list-text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
-              </p>
-            </li>
+          <li class="features-list-item">
+            <div class="features-icon-bg">
+              <svg class="diagram-icon" width="70" height="70">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <h3 class="features-list-title">Планирование</h3>
+            <p class="features-list-text">
+              Равным образом консультация с широким активом в значительной степени обуславливает.
+            </p>
+          </li>
 
-            <li class="features-list-item">
-              <h3 class="features-list-title">Современные технологии</h3>
-              <p class="features-list-text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-              </p>
-            </li>
-          </ul>
-        </div>
+          <li class="features-list-item">
+            <div class="features-icon-bg">
+              <svg class="astronaut-icon" width="70" height="70">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="features-list-title">Современные технологии</h3>
+            <p class="features-list-text">
+              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
             
@@ -98,33 +116,31 @@
       <div class="container">
         <h2 class="skills-title section-title">Чем мы занимаемся</h2>
 
-        <div class="skills-list-container">
-          <ul class="skills-list list">
-            <li class="skills-list-item">
-              <img src="./images/work-1.jpg" 
-                alt="Человек печатает на клавиатуре подключенной к планшету" 
-                width="370"
-                height="294" 
-                class=skills-list-img />
-            </li>
+        <ul class="skills-list list">
+          <li class="skills-list-item">
+            <img src="./images/work-1.jpg" 
+              alt="Человек печатает на клавиатуре подключенной к планшету" 
+              width="370"
+              height="294" 
+              class=skills-list-img />
+          </li>
 
-            <li class="skills-list-item">
-              <img src="./images/work-2.jpg" 
-                alt="Человек держит смартфон и работает за компьютером" 
-                width="370"
-                height="294"
-                class=skills-list-img />
-            </li>
+          <li class="skills-list-item">
+            <img src="./images/work-2.jpg" 
+              alt="Человек держит смартфон и работает за компьютером" 
+              width="370"
+              height="294"
+              class=skills-list-img />
+          </li>
 
-            <li class="skills-list-item">
-              <img src="./images/work-3.jpg" 
-                alt="Человек работает с палитрой цветов на планшете" 
-                width="370"
-                height="294"
-                class=skills-list-img />
-            </li>
-          </ul>
-        </div>
+          <li class="skills-list-item">
+            <img src="./images/work-3.jpg" 
+              alt="Человек работает с палитрой цветов на планшете" 
+              width="370"
+              height="294"
+              class=skills-list-img />
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -133,57 +149,83 @@
       <div class="container">
         <h2 class="team-title section-title">Наша команда</h2>
 
-        <div class="team-list-container">
-          <ul class="team-list list">
-            <li class="team-list-item">
-              <img src="./images/man-1.jpg" 
-                alt="Мужчина в очках и бордовой рубашке" 
-                width="270"
-                height="260" 
-                class="team-list-img" />
-              <div class="team-card-container">
-                <h3 class="team-card-title">Игорь Демьяненко</h3>
-                <p class="team-card-text" lang="en">Product Designer</p>
-              </div>
-            </li>
+        <ul class="team-list list">
+          <li class="team-list-item">
+            <img src="./images/man-1.jpg" 
+              alt="Мужчина в очках и бордовой рубашке" 
+              width="270"
+              height="260" 
+              class="team-list-img" />
+            <div class="team-card-container">
+              <h3 class="team-card-title">Игорь Демьяненко</h3>
+              <p class="team-card-text" lang="en">Product Designer</p>
+            </div>
+          </li>
 
-            <li class="team-list-item">
-              <img src="./images/woman-2.jpg" 
-                alt="Женщина в очках и пиджаке" 
-                width="270"
-                height="260"
-                class="team-list-img" />
-              <div class="team-card-container">
-                <h3 class="team-card-title">Ольга Репина</h3>
-                <p class="team-card-text" lang="en">Frontend Developer</p>
-              </div>
-            </li>
+          <li class="team-list-item">
+            <img src="./images/woman-2.jpg" 
+              alt="Женщина в очках и пиджаке" 
+              width="270"
+              height="260"
+              class="team-list-img" />
+            <div class="team-card-container">
+              <h3 class="team-card-title">Ольга Репина</h3>
+              <p class="team-card-text" lang="en">Frontend Developer</p>
+            </div>
+          </li>
 
-            <li class="team-list-item">
-              <img src="./images/man-3.jpg" 
-                alt="Мужчина в голубой рубашке" 
-                width="270"
-                height="260"
-                class="team-list-img" />
-              <div class="team-card-container">
-                <h3 class="team-card-title">Николай Тарасов</h3>
-                <p class="team-card-text" lang="en">Marketing</p>
-              </div>
-            </li>
-            
-            <li class="team-list-item">
-              <img src="./images/man-4.jpg" 
-                alt="Мужчина в очках и черной футболке" 
-                width="270"
-                height="260"
-                class="team-list-img" />
-              <div class="team-card-container">
-                <h3 class="team-card-title">Михаил Ермаков</h3>
-                <p class="team-card-text" lang="en">UI Designer</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+          <li class="team-list-item">
+            <img src="./images/man-3.jpg" 
+              alt="Мужчина в голубой рубашке" 
+              width="270"
+              height="260"
+              class="team-list-img" />
+            <div class="team-card-container">
+              <h3 class="team-card-title">Николай Тарасов</h3>
+              <p class="team-card-text" lang="en">Marketing</p>
+            </div>
+          </li>
+          
+          <li class="team-list-item">
+            <img src="./images/man-4.jpg" 
+              alt="Мужчина в очках и черной футболке" 
+              width="270"
+              height="260"
+              class="team-list-img" />
+            <div class="team-card-container">
+              <h3 class="team-card-title">Михаил Ермаков</h3>
+              <p class="team-card-text" lang="en">UI Designer</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Постоянные клиенты -->
+    <section class="clients section">
+      <div class="container">
+        <h1 class="clients-title section-title">Постоянные клиенты</h1>
+
+        <ul class="clients-list list">
+          <li class="clients-list-item">
+            <a href="" class="clients-link"></a>
+          </li>
+          <li class="clients-list-item">
+            <a href="" class="clients-link"></a>
+          </li>
+          <li class="clients-list-item">
+            <a href="" class="clients-link"></a>
+          </li>
+          <li class="clients-list-item">
+            <a href="" class="clients-link"></a>
+          </li>
+          <li class="clients-list-item">
+            <a href="" class="clients-link"></a>
+          </li>
+          <li class="clients-list-item">
+            <a href="" class="clients-link"></a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -191,7 +233,7 @@
   <!-- Подвал сайта-->
   <footer class="footer">
     <div class="container">
-      <a href="/" class="logo footer-margin">Web<span class="footer-logo">Studio</span></a>
+      <a href="/" class="logo footer-logo-margin">Web<span class="footer-logo">Studio</span></a>
       <address>
 
         <ul class="address-list list">

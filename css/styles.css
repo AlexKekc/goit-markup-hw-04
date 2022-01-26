@@ -63,9 +63,6 @@ body {
 
 .logo {
   display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -73,6 +70,12 @@ body {
   line-height: 1.19;
   text-decoration: none;
   color: var(--accent-color);
+}
+
+.header-logo-margin {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
 }
 
 .header-logo {
@@ -154,8 +157,23 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--footer-bg-color);
   text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--footer-bg-color);
 }
 
 .hero-title {
@@ -205,6 +223,16 @@ body {
 .features-list-item {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
+}
+
+.features-icon-bg {
+  display: flex;
+  padding: 25px 100px;
+  margin-bottom: var(--card-set-gap);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color);
 }
 
 .features-list-title {
@@ -298,13 +326,12 @@ body {
   background-color: var(--footer-bg-color);
 }
 
-.footer-margin {
-  padding: 0;
+.footer-logo-margin {
   margin-bottom: 20px;
 }
 
 .footer-logo {
-  display: inline-block;
+  /* display: inline-block; */
   color: var(--secondary-text-color);
 }
 
