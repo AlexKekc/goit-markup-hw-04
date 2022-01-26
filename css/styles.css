@@ -50,18 +50,23 @@ body {
   /* outline: 2px solid salmon; */
 }
 
+/* -------------------------------- Header -------------------------------- */
+
 .header-container {
   display: flex;
   align-items: center;
 }
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
 .logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -71,8 +76,6 @@ body {
 }
 
 .header-logo {
-  margin-right: 93px;
-
   color: var(--title-text-color);
 }
 
@@ -96,8 +99,8 @@ body {
 
 .site-nav-link {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -128,6 +131,7 @@ body {
 }
 
 .contacts-nav-link {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -175,8 +179,8 @@ body {
 }
 
 .section.no-padding {
-  padding-top: 94px;
-  padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -294,10 +298,13 @@ body {
   background-color: var(--footer-bg-color);
 }
 
+.footer-margin {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 .footer-logo {
   display: inline-block;
-  margin-bottom: 20px;
-
   color: var(--secondary-text-color);
 }
 
@@ -408,7 +415,7 @@ body {
 .work-examples-card-container {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-  border-top: transparent;
+  border-top: 0;
   box-sizing: border-box;
 }
 
