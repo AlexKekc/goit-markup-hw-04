@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="page-header">
+    <div class="header-container container">
+      <a href="/" class="logo">Web<span class="header-logo logo">Studio</span></a>
+
+      <!-- Навигация сайта -->
+      <nav>
+        <ul class="site-nav list">
+          <li class="site-nav-item">
+            <a href="./index.html" class="site-nav-link current">Студия</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="./portfolio.html" class="site-nav-link">Портфолио</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="" class="site-nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="contacts-nav list">
+        <li class="contacts-nav-item">
+          <a href="mailto:info@devstudio.com" class="contacts-nav-link">info@devstudio.com</a>
+        </li>
+        <li class="contacts-nav-item">
+          <a href="tel:+380961111111" class="contacts-nav-link">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+    
+  <!-- Основная часть сайта -->
+  <main>
+    <!-- Герой -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="hero-button button">Заказать услугу</button>
+      </div>
+    </section>
+
+    <!-- Особенности -->
+    <section class="section no-padding">
+      <div class="container">
+        <h2 class="features-title section-title visually-hidden">Особенности</h2>
+
+        <div class="features-list-container">
+          <ul class="features-list list">
+            <li class="features-list-item">
+              <h3 class="features-list-title">Внимание к деталям</h3>
+              <p class="features-list-text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+
+            <li class="features-list-item">
+              <h3 class="features-list-title">Пунктуальность</h3>
+              <p class="features-list-text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+
+            <li class="features-list-item">
+              <h3 class="features-list-title">Планирование</h3>
+              <p class="features-list-text">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+
+            <li class="features-list-item">
+              <h3 class="features-list-title">Современные технологии</h3>
+              <p class="features-list-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+            
+    <!-- Чем мы занимаемся -->      
+    <section class="skills section">
+      <div class="container">
+        <h2 class="skills-title section-title">Чем мы занимаемся</h2>
+
+        <div class="skills-list-container">
+          <ul class="skills-list list">
+            <li class="skills-list-item">
+              <img src="./images/work-1.jpg" 
+                alt="Человек печатает на клавиатуре подключенной к планшету" 
+                width="370"
+                height="294" 
+                class=skills-list-img />
+            </li>
+
+            <li class="skills-list-item">
+              <img src="./images/work-2.jpg" 
+                alt="Человек держит смартфон и работает за компьютером" 
+                width="370"
+                height="294"
+                class=skills-list-img />
+            </li>
+
+            <li class="skills-list-item">
+              <img src="./images/work-3.jpg" 
+                alt="Человек работает с палитрой цветов на планшете" 
+                width="370"
+                height="294"
+                class=skills-list-img />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Наша команда -->
+    <section class="team section">
+      <div class="container">
+        <h2 class="team-title section-title">Наша команда</h2>
+
+        <div class="team-list-container">
+          <ul class="team-list list">
+            <li class="team-list-item">
+              <img src="./images/man-1.jpg" 
+                alt="Мужчина в очках и бордовой рубашке" 
+                width="270"
+                height="260" 
+                class="team-list-img" />
+              <div class="team-card-container">
+                <h3 class="team-card-title">Игорь Демьяненко</h3>
+                <p class="team-card-text" lang="en">Product Designer</p>
+              </div>
+            </li>
+
+            <li class="team-list-item">
+              <img src="./images/woman-2.jpg" 
+                alt="Женщина в очках и пиджаке" 
+                width="270"
+                height="260"
+                class="team-list-img" />
+              <div class="team-card-container">
+                <h3 class="team-card-title">Ольга Репина</h3>
+                <p class="team-card-text" lang="en">Frontend Developer</p>
+              </div>
+            </li>
+
+            <li class="team-list-item">
+              <img src="./images/man-3.jpg" 
+                alt="Мужчина в голубой рубашке" 
+                width="270"
+                height="260"
+                class="team-list-img" />
+              <div class="team-card-container">
+                <h3 class="team-card-title">Николай Тарасов</h3>
+                <p class="team-card-text" lang="en">Marketing</p>
+              </div>
+            </li>
+            
+            <li class="team-list-item">
+              <img src="./images/man-4.jpg" 
+                alt="Мужчина в очках и черной футболке" 
+                width="270"
+                height="260"
+                class="team-list-img" />
+              <div class="team-card-container">
+                <h3 class="team-card-title">Михаил Ермаков</h3>
+                <p class="team-card-text" lang="en">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта-->
+  <footer class="footer">
+    <div class="container">
+      <a href="/" class="logo">Web<span class="footer-logo logo">Studio</span></a>
+      <address>
+
+        <ul class="address-list list">
+          <li class="address-list-item">
+            <a href="https://goo.gl/maps/LnpC9YfZU35sji429" 
+              target="_blank" 
+              rel="noopener noreferrer nofollow"
+              class="address-list-link map">г. Киев, пр-т Леси Украинки, 26
+            </a>
+          </li>
+          <li class="address-list-item">
+            <a href="mailto:info@example.com" class="address-list-link">info@example.com</a>
+          </li>
+          <li class="address-list-item">
+            <a href="tel:+380991111111" class="address-list-link">+38 099 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </footer>
+</body>
+</html>

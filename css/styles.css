@@ -1,0 +1,429 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --hero-button-hover: #188ce8;
+  --card-set-gap: 30px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid salmon; */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.header-logo {
+  margin-right: 93px;
+
+  color: var(--title-text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* -------------------------------- Site nav -------------------------------- */
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav-link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav-link.current {
+  color: var(--accent-color);
+}
+
+/* -------------------------------- Contacts nav -------------------------------- */
+
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts-nav-link:hover,
+.contacts-nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* -------------------------------- Hero -------------------------------- */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: var(--footer-bg-color);
+  text-align: center;
+}
+
+.hero-title {
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  color: var(--secondary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* -------------------------------- Section -------------------------------- */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.section-title {
+  margin-bottom: 0;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* -------------------------------- Features -------------------------------- */
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.features-list-item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
+
+.features-list-title {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* -------------------------------- Skills -------------------------------- */
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.skills-list-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
+
+.skills-title {
+  margin-bottom: 50px;
+}
+
+/* -------------------------------- Team -------------------------------- */
+
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-title {
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.team-list-item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
+
+.team-card-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.team-card-title {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* -------------------------------- Footer -------------------------------- */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-bg-color);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--secondary-text-color);
+}
+
+.address-list-item:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.address-list-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.address-list-link.map {
+  color: var(--secondary-text-color);
+}
+
+.address-list-link:hover,
+.address-list-link:focus {
+  color: var(--accent-color);
+}
+
+/* -------------------------------- Buttons -------------------------------- */
+
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+  font-family: inherit;
+  align-items: center;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.hero-button {
+  min-width: 200px;
+  padding: 10px 32px;
+
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover {
+  background-color: var(--hero-button-hover);
+}
+
+.portfolio-filter-button {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.current-button {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+/* -------------------------------- Portfolio -------------------------------- */
+
+.portfolio-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-filter-list-item + .portfolio-filter-list-item {
+  margin-left: 8px;
+}
+
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.work-examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.work-examples-list-item {
+  flex-basis: calc(100% / 9 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+}
+
+.work-examples-card-container {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: transparent;
+  box-sizing: border-box;
+}
+
+.work-examples-card-title {
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-examples-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
