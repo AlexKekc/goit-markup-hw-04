@@ -415,7 +415,6 @@ body {
 }
 
 .footer-logo {
-  /* display: inline-block; */
   color: var(--secondary-text-color);
 }
 
@@ -491,9 +490,9 @@ body {
 
 .button {
   display: inline-block;
+
   border: none;
   border-radius: 4px;
-
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   font-family: inherit;
@@ -574,6 +573,7 @@ body {
 
 .work-examples-card-container {
   padding: 20px 24px;
+
   border: 1px solid #eeeeee;
   border-top: 0;
   box-sizing: border-box;
